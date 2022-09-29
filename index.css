@@ -1,0 +1,279 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(164, 157, 157);
+}
+.menubar
+{
+    height: 20vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    top: 1em;
+}
+#ondesklogo
+{
+    position: relative;
+    height: 2em;
+}
+#menu
+{
+    display: none;
+}
+#menucont
+{
+    list-style: none;
+    display: flex;
+    justify-content:flex-start;
+    font-size: larger;
+    width: 30em;
+}
+#menucont p
+{
+    font-size: medium;
+}
+
+#menucont ul li{
+    display: none;
+    width: 20em;
+    margin-top: 1em;
+}
+#list
+{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    border-radius: 1em;
+    padding-left: 1em;
+    z-index: 1;
+    background-color: white;
+}
+#list span{
+    font-weight: bold;
+}
+#menucont li:hover #list li
+{
+    display: block;
+}
+.link
+{
+    padding-left: 1.7em;
+}
+button
+{
+    color: rgb(164, 157, 157);
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: relative;
+    background-color: rgb(30, 91, 30);
+    border-radius: .6em;
+}
+#body
+{
+    display: flex;
+    justify-content: center;
+}
+#bodycont
+{
+    position: relative;
+    width: 50vw;
+    float: left;
+    top: 05vh;
+}
+#bodycont h2
+{
+    font-size: 4em;
+    color: black;
+}
+#bodycont span 
+{
+    color: rgb(240, 188, 45);
+}
+#bodycont p{
+    font-size: 1.2em;
+}
+#bodycont button{
+    color: rgb(164, 157, 157);
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: rgb(30, 91, 30);
+    border-radius: .4em;
+    position: relative;
+    top: 2em;
+}
+#rating
+{
+    position: relative;
+    top:2em;
+    float: left;
+}
+.ratinglogo
+{
+    position: relative;
+    top:2.5em;
+    margin-left: 1em;
+}
+aside
+{
+    background-color: rgb(3, 3, 68);
+    display: inline-block;
+    width: 20vw;
+    position: relative;
+    top: 5vh;
+    min-height: 22em;
+    border-radius: 2em;
+    border: solid .3em rgb(50, 162, 50);
+}
+#threedots
+{
+    height: 1.5em;
+    border-radius: 1em;
+    float: right;
+    margin:1em
+}
+#huzaifa
+{
+    height: 20vh;
+    width: 5vw;
+    position:relative;
+    top: 30%;
+    left: 35%;
+    clip-path:circle();
+}
+#mic
+{
+    position: absolute;
+    height: 2em;
+    border-radius: 2em;
+    top: 18em;
+    left: 1.5em;
+    display: inline-block;
+}
+h5
+{
+    position: absolute;
+    top:22em;
+    left: 5em;
+}
+footer
+{
+    position: relative;
+    top: 15vh;
+    width: 100%;
+}
+footer p
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#footericons
+{
+    column-count: 4;
+    margin-left: 5%;
+}
+
+@media screen and (max-width:600px) {
+    .menubar
+{
+    height:8vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-left: 2em;
+}
+    .link
+    {
+        display: none;
+    }
+    .menubar button
+    {
+        display: none;
+    }
+    #menu
+    {
+        display: block;
+        position: relative;
+        left: 50%;    
+        height: 3em;
+    }
+    .menubar li
+    {
+        display: none;
+    }
+    #body
+    {
+        margin: 1em;
+    }
+    #bodycont
+    {
+        width: 100%;
+        display: block;
+    }
+    #bodycont h2
+{
+    max-width:90% ;
+    font-size: 1.8em;
+    color: black;
+}
+#bodycont span
+{
+    color: rgb(240, 177, 16);
+    max-width: 95%;
+}
+#bodycont p{
+    font-size: 1em;
+}
+#bodycont button{
+    color: white;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: rgb(30, 91, 30);
+    border-radius: .4em;
+    position: relative;
+    top: 2em;
+}
+aside
+    {
+        display: none;
+    }
+#rating
+{
+    position: relative;
+    top:4em;
+    float: left;
+    font-size: .8em;
+}
+.ratinglogo
+{
+    position: relative;
+    top: 4em;
+}
+footer
+{
+    width: 95%;
+    margin-top: 8em;
+}
+footer p
+{
+    margin: 1em;
+}
+#footericons
+{
+    column-count: 2;
+    margin: .5em;
+}
+.footericon
+{
+    height: 4em;
+}
+}
